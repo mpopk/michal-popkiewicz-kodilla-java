@@ -1,4 +1,4 @@
-package com.kodilla.testing;
+package com.kodilla.testing.forum;
 
 public class ForumPost {
     String postBody;
@@ -35,6 +35,6 @@ public class ForumPost {
         return result;
     }
 }
-}
+
 
 
