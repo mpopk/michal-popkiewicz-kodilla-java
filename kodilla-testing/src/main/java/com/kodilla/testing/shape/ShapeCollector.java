@@ -1,60 +1,42 @@
 package com.kodilla.testing.shape;
 
-import java.util.ArrayList;
+import java.util.*;
 
-public class ShapeCollector implements Shape {
-    private Shape shapeName;
-    int field;
 
-    private ArrayList<ShapeName> fiugres = new ArrayList<>();
-    public void addFigure(Shape shape) {
-        this.shapeName = shape;
+
+
+public class ShapeCollector {
+
+    private ArrayList<Shape> figures = new ArrayList<>();
+
+    public String getFigures() {
+        return figures;
     }
 
-    public void removeFigure(Shape shape) {
-        this.shapeName = shape;
-
+    public String figures.add(Shape shape){
+        return figures.size();
     }
 
-    public void getFigure(int n) {
-        return ShapeCollector.get(n);
+    public String figures.remove(Shape shape){
+        return figures.shape();
     }
 
-    public void showFigures() {
+    public String figures.get(n){
+        return figures.shape(n);
+    }
+
+    public String showFigures() {
         for (String shape : ShapeCollector) {
-            System.out.println(shape);
+           System.out.println(shape);
         }
-
-            }
-
-    public String getShapeName() {
-        return null;
     }
 
-    public int getField() {
-        return 0;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        ShapeCollector that = (ShapeCollector) o;
-
-        if (field != that.field) return false;
-        return shapeName.equals(that.shapeName);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = shapeName.hashCode();
-        result = 31 * result + field;
-        return result;
-    }
+}
 
 
-    }
+
+
+
 
 
 
