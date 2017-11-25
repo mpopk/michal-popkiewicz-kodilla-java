@@ -4,7 +4,7 @@ public class Square implements Shape {
     private int field;
     private String shapeName;
 
-    public Square(String field, int shapeName) {
+    public Square(String shapeName, int field) {
         this.field = field;
         this.shapeName = shapeName;
     }
