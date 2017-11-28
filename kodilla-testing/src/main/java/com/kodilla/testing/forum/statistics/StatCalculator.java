@@ -54,7 +54,7 @@ public class StatCalculator {
         return avrCommentsPerPost;
     }
 
-public void showStatistics(){
+public static void showStatistics(){
 
         System.out.println("Users No: " + usersNumber);
         System.out.println("Posts No: " + postsNumber);
