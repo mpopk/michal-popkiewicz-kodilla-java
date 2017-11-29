@@ -9,15 +9,6 @@ public class StatCalculator {
     private double avrCommentsPerUser;
     private double avrCommentsPerPost;
 
-    public StatCalculator() {
-
-        this.usersNumber = usersNumber;
-        this.postsNumber = postsNumber;
-        this.commentsNumber = commentsNumber;
-        this.avrPostsPerUser = avrPostsPerUser;
-        this.avrCommentsPerUser = avrCommentsPerUser;
-        this.avrCommentsPerPost = avrCommentsPerPost;
-    }
 
     public void calculateAdvStatistics(Statistics statistics){
 
@@ -25,22 +16,19 @@ public class StatCalculator {
         postsNumber = statistics.postsCount();
         commentsNumber = statistics.commentsCount();
 
-        avrPostsPerUser = usersNumber/postsNumber;
-        avrCommentsPerUser = usersNumber/postsNumber;
-        avrCommentsPerPost = postsNumber/commentsNumber;
-    }
+if(postsNumber!=0) {
+    avrPostsPerUser = usersNumber / postsNumber;
+    avrCommentsPerUser = usersNumber/postsNumber;
+}else{
+    avrPostsPerUser = 0;
+ avrCommentsPerUser = 0;
+}
 
-    public int getUsersNumber() {
-        return usersNumber;
-    }
-
-    public int getPostsNumber() {
-        return postsNumber;
-    }
-
-    public int getCommentsNumber() {
-        return commentsNumber;
-    }
+if(commentsNumber!=0) {
+    avrCommentsPerPost = postsNumber / commentsNumber;
+}else{
+    avrCommentsPerPost = 0;
+}}
 
     public double getAvrPostsPerUser() {
         return avrPostsPerUser;
@@ -54,7 +42,7 @@ public class StatCalculator {
         return avrCommentsPerPost;
     }
 
-public static void showStatistics(){
+public void showStatistics(){
 
         System.out.println("Users No: " + usersNumber);
         System.out.println("Posts No: " + postsNumber);
