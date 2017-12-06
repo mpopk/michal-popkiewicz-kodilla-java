@@ -12,7 +12,7 @@ class Country {
         this.country = country;
     }
 
-    public static BigDecimal getPeopleQuantity() {
+    public BigDecimal getPeopleQuantity() {
         return peopleQuantity;
     }
 
