@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 
 class Country {
-    private static BigDecimal peopleQuantity;
+    private BigDecimal peopleQuantity;
     private String country;
 
     public Country(String country, BigDecimal peopleQuantity) {
