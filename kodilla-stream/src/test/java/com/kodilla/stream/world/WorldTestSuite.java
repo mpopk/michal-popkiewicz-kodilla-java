@@ -52,7 +52,7 @@ public class WorldTestSuite {
         BigDecimal totalPopulation = world.getPeopleQuantity();
 
 //then
-        BigDecimal totalPopulationResult = new BigDecimal("3336000000");
+        BigDecimal totalPopulationResult = new BigDecimal("3366000000");
 
         Assert.assertEquals(totalPopulationResult, totalPopulation);
 
