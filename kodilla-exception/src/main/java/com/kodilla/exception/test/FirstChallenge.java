@@ -1,4 +1,4 @@
-package com.kodilla.exception.com.kodilla.exception.test;
+package com.kodilla.exception.test;
 
 public class FirstChallenge {
     public double divide(double a, double b) throws ArithmeticException {
@@ -14,8 +14,8 @@ public class FirstChallenge {
 
             System.out.println("whatever");
 
-            return a / b;
         }
+        return a/b;
     }
 
     /**
